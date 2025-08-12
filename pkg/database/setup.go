@@ -6,6 +6,8 @@ import (
 
 	"github.com/khoerulih/go-simple-messaging-app/app/models"
 	"github.com/khoerulih/go-simple-messaging-app/pkg/env"
+	"go.mongodb.org/mongo-driver/v2/mongo"
+	"go.mongodb.org/mongo-driver/v2/mongo/options"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"
@@ -33,4 +35,16 @@ func SetupDatabase() {
 
 	fmt.Println("Database connection established successfully")
 
+}
+
+func SetupMongoDB() {
+	uri := env.GetEnv("MONGODB_URI", "")
+	client, err := mongo.Connect(options.Client().ApplyURI(uri))
+	if err != nil {
+		panic(err)
+	}
+	coll := client.Database("messaging_db").Collection("message_history")
+	MongoDB = coll
+
+	fmt.Println("MongoDB connection established successfully")
 }
