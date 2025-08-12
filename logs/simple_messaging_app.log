@@ -1,0 +1,56 @@
+2025/08/12 10:34:46 Database connection established successfully
+2025/08/12 10:34:46 MongoDB connection established successfully
+2025/08/12 10:36:10 failed to get user session on DB:  record not found
+2025/08/12 10:36:21 failed to insert new user
+2025/08/12 10:36:47 failed to insert new user
+2025/08/12 13:25:15 Database connection established successfully
+2025/08/12 13:25:18 MongoDB connection established successfully
+2025/08/12 13:27:13 failed to parse jwt: token has invalid claims: token is expired
+2025/08/12 13:35:42 Database connection established successfully
+2025/08/12 13:35:42 MongoDB connection established successfully
+2025/08/12 13:37:48 failed to insert new user
+2025/08/12 13:39:06 Database connection established successfully
+2025/08/12 13:39:07 MongoDB connection established successfully
+2025/08/12 13:39:10 failed to insert new user: Error 1062 (23000): Duplicate entry 'khoerul3' for key 'users.uni_users_username'
+2025/08/12 13:56:29 Database connection established successfully
+2025/08/12 13:56:30 MongoDB connection established successfully
+2025/08/12 13:56:40 failed to insert new user: Error 1062 (23000): Duplicate entry 'khoerul3' for key 'users.uni_users_username'
+2025/08/12 13:56:48 failed to get user session on DB:  record not found
+2025/08/12 13:56:51 failed to parse jwt: token has invalid claims: token is expired
+2025/08/12 14:04:24 Database connection established successfully
+2025/08/12 14:04:24 MongoDB connection established successfully
+2025/08/12 14:04:29 failed to insert new user: Error 1062 (23000): Duplicate entry 'khoerul3' for key 'users.uni_users_username'
+2025/08/12 14:05:19 failed to insert new user: Error 1062 (23000): Duplicate entry 'khoerul3' for key 'users.uni_users_username'
+2025/08/12 14:19:29 Database connection established successfully
+2025/08/12 14:19:30 MongoDB connection established successfully
+2025/08/12 14:19:36 failed to insert new user: Error 1062 (23000): Duplicate entry 'khoerul3' for key 'users.uni_users_username'
+2025/08/12 14:19:48 failed to get user session on DB:  record not found
+2025/08/12 14:19:52 failed to parse jwt: token has invalid claims: token is expired
+2025/08/12 14:22:32 failed to get user session on DB:  record not found
+2025/08/12 14:22:37 failed to get user session on DB:  record not found
+2025/08/12 14:22:51 failed to get user session on DB:  record not found
+2025/08/12 14:23:01 failed to get user session on DB:  record not found
+2025/08/12 14:23:39 failed to get user session on DB:  record not found
+2025/08/12 14:23:55 failed to get user session on DB:  record not found
+2025/08/12 14:35:58 Database connection established successfully
+2025/08/12 14:35:58 MongoDB connection established successfully
+2025/08/12 14:36:04 failed to parse jwt: token has invalid claims: token is expired
+2025/08/12 14:36:06 failed to parse jwt: token has invalid claims: token is expired
+2025/08/12 14:36:06 failed to parse jwt: token has invalid claims: token is expired
+2025/08/12 14:36:07 failed to parse jwt: token has invalid claims: token is expired
+2025/08/12 14:36:07 failed to parse jwt: token has invalid claims: token is expired
+2025/08/12 14:36:09 error payload:  websocket: close 1001 (going away)
+2025/08/12 14:36:34 failed to insert new message: <nil>
+2025/08/12 14:38:34 failed to insert new message: <nil>
+2025/08/12 14:38:52 error payload:  websocket: close 1001 (going away)
+2025/08/12 14:52:29 Database connection established successfully
+2025/08/12 14:52:31 MongoDB connection established successfully
+2025/08/12 14:52:34 error payload:  websocket: close 1001 (going away)
+2025/08/12 14:52:39 failed to insert new message: <nil>
+2025/08/12 14:54:21 Database connection established successfully
+2025/08/12 14:54:21 MongoDB connection established successfully
+2025/08/12 14:56:13 Database connection established successfully
+2025/08/12 14:56:14 MongoDB connection established successfully
+2025/08/12 14:56:26 error payload:  websocket: close 1001 (going away)
+2025/08/12 14:56:39 error payload:  websocket: close 1001 (going away)
+2025/08/12 15:07:03 error payload:  websocket: close 1001 (going away)
