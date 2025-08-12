@@ -11,6 +11,7 @@ import (
 	"github.com/khoerulih/go-simple-messaging-app/app/models"
 	"github.com/khoerulih/go-simple-messaging-app/app/repository"
 	"github.com/khoerulih/go-simple-messaging-app/pkg/env"
+	"go.elastic.co/apm"
 )
 
 func ServeWSMessaging(app *fiber.App) {
@@ -28,14 +29,20 @@ func ServeWSMessaging(app *fiber.App) {
 		for {
 			var msg models.MessagePayload
 			if err := c.ReadJSON(&msg); err != nil {
-				fmt.Println("error payload: ", err)
+				log.Println("error payload: ", err)
 				break
 			}
+
+			tx := apm.DefaultTracer.StartTransaction("Send Message", "ws")
+			ctx := apm.ContextWithTransaction(context.Background(), tx)
+
 			msg.Date = time.Now()
-			err := repository.InsertMessage(context.Background(), msg)
+			err := repository.InsertNewMessage(ctx, msg)
 			if err != nil {
-				fmt.Println(err)
+				log.Println(err)
 			}
+			tx.End()
+
 			broadcast <- msg
 		}
 	}))
@@ -45,7 +52,7 @@ func ServeWSMessaging(app *fiber.App) {
 			msg := <-broadcast
 			for client := range clients {
 				if err := client.WriteJSON(msg); err != nil {
-					fmt.Println("failed to write json: ", err)
+					log.Println("failed to write json: ", err)
 					client.Close()
 					delete(clients, client)
 				}
