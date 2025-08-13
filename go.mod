@@ -9,7 +9,8 @@ require (
 	github.com/gofiber/template/html/v2 v2.1.3
 	github.com/golang-jwt/jwt/v5 v5.3.0
 	github.com/joho/godotenv v1.5.1
-	go.mongodb.org/mongo-driver v1.17.4
+	go.elastic.co/apm v1.15.0
+	go.elastic.co/apm/module/apmfiber v1.15.0
 	go.mongodb.org/mongo-driver/v2 v2.2.3
 	golang.org/x/crypto v0.41.0
 	gorm.io/driver/mysql v1.6.0
@@ -41,7 +42,6 @@ require (
 	github.com/mattn/go-colorable v0.1.14 // indirect
 	github.com/mattn/go-isatty v0.0.20 // indirect
 	github.com/mattn/go-runewidth v0.0.16 // indirect
-	github.com/montanaflynn/stats v0.7.1 // indirect
 	github.com/philhofer/fwd v1.1.3-0.20240916144458-20a13a1f6b7c // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/prometheus/procfs v0.0.0-20190425082905-87a4384529e0 // indirect
@@ -55,11 +55,8 @@ require (
 	github.com/xdg-go/scram v1.1.2 // indirect
 	github.com/xdg-go/stringprep v1.0.4 // indirect
 	github.com/youmark/pkcs8 v0.0.0-20240726163527-a2c0da244d78 // indirect
-	go.elastic.co/apm v1.15.0 // indirect
 	go.elastic.co/apm/module/apmfasthttp v1.15.0 // indirect
-	go.elastic.co/apm/module/apmfiber v1.15.0 // indirect
 	go.elastic.co/apm/module/apmhttp v1.15.0 // indirect
-	go.elastic.co/apm/v2 v2.7.1 // indirect
 	go.elastic.co/fastjson v1.5.1 // indirect
 	golang.org/x/lint v0.0.0-20201208152925-83fdc39ff7b5 // indirect
 	golang.org/x/mod v0.26.0 // indirect

@@ -54,3 +54,7 @@
 2025/08/12 14:56:26 error payload:  websocket: close 1001 (going away)
 2025/08/12 14:56:39 error payload:  websocket: close 1001 (going away)
 2025/08/12 15:07:03 error payload:  websocket: close 1001 (going away)
+2025/08/12 19:13:37 Database connection established successfully
+2025/08/12 19:13:37 MongoDB connection established successfully
+2025/08/13 09:29:38 Database connection established successfully
+2025/08/13 09:29:39 MongoDB connection established successfully
